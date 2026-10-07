@@ -1,0 +1,27 @@
+mqtt:
+  broker: "localhost"
+  port: 1883
+  topic: "iot/class/lab2/+/data"
+  client_id: "lab2-collector"
+
+influxdb:
+  url: "http://localhost:8086"
+  token: "my-super-secret-token-lab2"
+  org: "iot-lab"
+  bucket_raw: "iot_lab2_raw"
+  bucket_processed: "iot_lab2_processed"
+
+validation:
+  temp_min: -40
+  temp_max: 80
+  humidity_min: 0
+  humidity_max: 100
+  light_min: 0
+  max_clock_skew_sec: 300
+
+preprocess:
+  resample_interval: "1min"
+  outlier_method: "iqr"
+  iqr_factor: 1.5
+  rolling_window: 5
+  query_range: "-1h"

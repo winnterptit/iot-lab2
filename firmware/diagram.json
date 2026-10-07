@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "author": "Your Name",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht", "top": -50, "left": 120, "attrs": { "temperature": "25", "humidity": "60" } },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr", "top": 100, "left": 120, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:3V3", "dht:VCC", "red", [ "v0" ] ],
+    [ "esp:GND.1", "dht:GND", "black", [ "v0" ] ],
+    [ "esp:4", "dht:SDA", "green", [ "v0" ] ],
+    [ "esp:3V3", "ldr:VCC", "red", [ "v0" ] ],
+    [ "esp:GND.2", "ldr:GND", "black", [ "v0" ] ],
+    [ "esp:34", "ldr:AO", "green", [ "v0" ] ]
+  ]
+}

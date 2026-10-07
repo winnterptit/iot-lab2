@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.ino": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled",
+  "python.analysis.extraPaths": ["${workspaceFolder}"],
+  "python.terminal.activateEnvironment": true,
+  "platformio-ide.autoRebuildAutocompleteIndex": true,
+  "terminal.integrated.cwd": "${workspaceFolder}"
+}

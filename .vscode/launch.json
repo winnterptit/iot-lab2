@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Collector",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/collector/collector.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Run Preprocessor",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/preprocess/preprocess.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

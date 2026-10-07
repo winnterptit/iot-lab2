@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# VS Code
+.vscode/*.log
+
+# Wokwi license cache
+.wokwi/
+
+# InfluxDB / Mosquitto data
+influxdb-data/
+mosquitto/data/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Báo cáo đã export (tùy chọn, bỏ comment nếu không muốn đẩy file word lên git)
+# report/*.docx
